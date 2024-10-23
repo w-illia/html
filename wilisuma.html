@@ -1,0 +1,61 @@
+<html lang="es">
+<head>
+    <title>Suma de Dos Números</title>
+    <script>
+        function sumar() {
+            var num1 = parseFloat(document.getElementById("num1").value);
+            var num2 = parseFloat(document.getElementById("num2").value);
+            
+            var suma = num1 + num2;
+            
+            document.getElementById("resultado").textContent = "La suma es: " + suma;
+        }
+    </script>
+    <style>
+        
+        body {
+            background-image: url(imagenes/soldado-de-battlefield-2042-7962.webp);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-attachment: fixed;
+            display: flex;
+            flex-direction: column;
+            align-items: center; /* Centra horizontalmente */
+            justify-content: center; /* Centra verticalmente */
+            height: 100vh; /* Usa toda la altura de la ventana */
+            margin: 0; /* Elimina margenes */
+        }
+        h1 {
+            color: rgb(11, 200, 224);
+            text-align: center;
+        }
+        h2 {
+            color: rgb(252, 143, 0);
+            text-align: center;
+        }
+        .input-container {
+            text-align: center; /* Centra los inputs */
+        }
+    </style>
+</head>
+<body>
+    
+         
+         <h1>Calculadora de Suma</h1>
+    
+            <h2>Introduce dos números para calcular la suma:</h2>
+    
+                <div class="input-container">
+                     <label for="num1">Número 1:</label>
+                        <input type="number" id="num1" required><br><br>
+
+                              <label for="num2">Número 2:</label>
+                                <input type="number" id="num2" required><br><br>
+        
+                                  < <button onclick="sumar()">Calcular Suma</button>
+    </div>
+    
+     <p id="resultado"></p>
+    
+</body>
+</html>
